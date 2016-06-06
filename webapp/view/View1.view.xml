@@ -1,0 +1,26 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="NestedViews.controller.View1">
+	<App>
+		<pages>
+			<IconTabBar selectedKey="__filter0" id="__bar0">
+			    <items>
+			        <IconTabFilter text="Orders" count="22" showAll="true" id="__filter0">
+			            <content>
+			                <List noDataText="No data" id="__list0">
+			                    <items>
+			                        <StandardListItem counter="0" title="List Item 1" id="__item0"/>
+			                        <StandardListItem counter="0" title="List Item 2" id="__item1"/>
+			                        <StandardListItem counter="0" title="List Item 3" id="__item2"/></items>
+			                </List>
+			            </content>
+			        </IconTabFilter>
+			        <IconTabFilter text="Open" count="10" icon="sap-icon://task" iconColor="Critical" id="__filter1"/>
+			        <IconTabFilter text="Shipped" count="5" icon="sap-icon://shipping-status" iconColor="Positive" id="__filter2"/></items>
+			</IconTabBar>
+			<Page title="{i18n>title}" id="myPAge">
+				<content>
+					<Text text="Hello"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
